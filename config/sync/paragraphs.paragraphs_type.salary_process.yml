@@ -1,0 +1,10 @@
+uuid: 41798230-85ae-4ac4-8e04-4cb48128b0ee
+langcode: en
+status: true
+dependencies: {  }
+id: salary_process
+label: 'Salary Process'
+icon_uuid: null
+icon_default: null
+description: 'Salary processed.'
+behavior_plugins: {  }

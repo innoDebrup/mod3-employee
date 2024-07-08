@@ -1,0 +1,21 @@
+uuid: 4d52fd98-5e5d-4e8b-a5df-16ad226008ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leaves
+    - node.type.leaves
+  module:
+    - datetime
+id: node.leaves.field_leaves
+field_name: field_leaves
+entity_type: node
+bundle: leaves
+label: Leaves
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

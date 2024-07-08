@@ -1,0 +1,20 @@
+uuid: 7908f585-5274-4c44-bf13-097af5cc59fc
+langcode: en
+status: true
+dependencies: {  }
+id: send_email_to_hr
+label: 'Send Email to HR'
+description: 'Send email to HR about new user request.'
+type: send_email
+target_entity_type: null
+target_bundle: null
+tags: {  }
+settings:
+  subject: 'New User Request Needs Approval'
+  use_site_mail_as_sender: true
+  from: ''
+  to: debrup.pramanik@innoraft.com
+  format: text
+  body:
+    format: full_html
+    value: '<p>A new user has registered.</p><p>Please check if they are in need of approval or not.</p>'

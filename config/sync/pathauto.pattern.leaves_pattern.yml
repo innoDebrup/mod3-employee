@@ -1,0 +1,22 @@
+uuid: 648ab7ad-e044-47af-be59-aeaea7cee604
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: leaves_pattern
+label: 'Leaves Pattern'
+type: 'canonical_entities:node'
+pattern: '/leaves/[node:field_employee:entity:display-name]'
+selection_criteria:
+  4e32de12-ebcd-4e06-8043-cb2940bf3468:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4e32de12-ebcd-4e06-8043-cb2940bf3468
+    context_mapping:
+      node: node
+    bundles:
+      leaves: leaves
+selection_logic: and
+weight: -5
+relationships: {  }

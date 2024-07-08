@@ -1,0 +1,23 @@
+uuid: 59963582-29d6-46d6-8abb-0b8495b68aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_processed
+    - paragraphs.paragraphs_type.salary_process
+id: paragraph.salary_process.field_processed
+field_name: field_processed
+entity_type: paragraph
+bundle: salary_process
+label: Status
+description: 'Whether salary is processed or not. Check for processed. Keep unchecked for Rejected.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Processed
+  off_label: Rejected
+field_type: boolean

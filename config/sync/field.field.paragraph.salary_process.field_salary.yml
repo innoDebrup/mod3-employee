@@ -1,0 +1,23 @@
+uuid: 14ff3337-b19e-4871-8d1c-342004ff19fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_salary
+    - paragraphs.paragraphs_type.salary_process
+id: paragraph.salary_process.field_salary
+field_name: field_salary
+entity_type: paragraph
+bundle: salary_process
+label: Salary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ₹
+  suffix: ''
+field_type: integer

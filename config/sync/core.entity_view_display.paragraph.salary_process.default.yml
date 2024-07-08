@@ -1,0 +1,120 @@
+uuid: 72ede833-c555-4912-a8b2-7fb08be5a769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.salary_process.field_date_processed
+    - field.field.paragraph.salary_process.field_processed
+    - field.field.paragraph.salary_process.field_salary
+    - paragraphs.paragraphs_type.salary_process
+  module:
+    - datetime
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: Content
+          context_mapping: {  }
+          column_widths: 50-25-25
+        components:
+          4de28651-3d6d-4e6f-a055-45581e8062d5:
+            uuid: 4de28651-3d6d-4e6f-a055-45581e8062d5
+            region: first
+            configuration:
+              id: 'field_block:paragraph:salary_process:field_salary'
+              label: Salary
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: hidden
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          173c2b52-e964-4bfb-b39f-ad01b8781943:
+            uuid: 173c2b52-e964-4bfb-b39f-ad01b8781943
+            region: second
+            configuration:
+              id: 'field_block:paragraph:salary_process:field_processed'
+              label: Processed
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f38d3526-c88e-446a-b6fd-feba99bb692b:
+            uuid: f38d3526-c88e-446a-b6fd-feba99bb692b
+            region: third
+            configuration:
+              id: 'field_block:paragraph:salary_process:field_date_processed'
+              label: 'Date Processed'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: olivero_medium
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.salary_process.default
+targetEntityType: paragraph
+bundle: salary_process
+mode: default
+content:
+  field_date_processed:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_processed:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: first
+  field_salary:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

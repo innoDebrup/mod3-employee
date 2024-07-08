@@ -1,0 +1,25 @@
+uuid: 9c00db34-377d-40eb-8bfb-8d9c82a4e511
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.left-navigation-menu
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_leftnavigationmenu
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: 'system_menu_block:left-navigation-menu'
+settings:
+  id: 'system_menu_block:left-navigation-menu'
+  label: 'Left Navigation Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

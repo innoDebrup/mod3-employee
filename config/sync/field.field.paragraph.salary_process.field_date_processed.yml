@@ -1,0 +1,21 @@
+uuid: ed4a8a38-0ac1-4db0-8fc4-91f7fb635522
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date_processed
+    - paragraphs.paragraphs_type.salary_process
+  module:
+    - datetime
+id: paragraph.salary_process.field_date_processed
+field_name: field_date_processed
+entity_type: paragraph
+bundle: salary_process
+label: 'Date Processed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

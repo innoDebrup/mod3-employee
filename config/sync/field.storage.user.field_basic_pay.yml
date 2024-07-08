@@ -1,0 +1,20 @@
+uuid: 8ff35270-f09d-4bf8-a2f8-349a2afb2644
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_basic_pay
+field_name: field_basic_pay
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

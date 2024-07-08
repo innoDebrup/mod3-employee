@@ -1,0 +1,31 @@
+uuid: ba588358-c1bc-4360-ad69-46d62fe9c982
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.employee_salary
+  module:
+    - admin_toolbar_search
+    - field_ui
+    - node
+    - toolbar
+    - webform
+    - webform_submission_log
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'access webform submission log'
+  - 'access webform submission user'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'change own username'
+  - 'create employee_salary content'
+  - 'edit own employee_salary content'
+  - 'use admin toolbar search'
+  - 'view user email addresses'

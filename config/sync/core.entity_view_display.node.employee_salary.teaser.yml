@@ -1,0 +1,24 @@
+uuid: 7bf01d7b-878a-44b9-9d0b-9c11db024b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employee_salary.field_salary
+    - field.field.node.employee_salary.field_user
+    - node.type.employee_salary
+  module:
+    - user
+id: node.employee_salary.teaser
+targetEntityType: node
+bundle: employee_salary
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_salary: true
+  field_user: true
