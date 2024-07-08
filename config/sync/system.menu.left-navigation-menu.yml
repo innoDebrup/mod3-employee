@@ -1,0 +1,8 @@
+uuid: e0c6a0d1-a0a5-4fa4-9435-382cd0fd08b1
+langcode: en
+status: true
+dependencies: {  }
+id: left-navigation-menu
+label: 'Left Navigation Menu'
+description: ''
+locked: false

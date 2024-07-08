@@ -1,0 +1,39 @@
+uuid: 33c1cfd3-a0fa-4af0-8134-1def043217e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leaves.field_employee
+    - field.field.node.leaves.field_leaves
+    - node.type.leaves
+  module:
+    - datetime
+    - user
+id: node.leaves.default
+targetEntityType: node
+bundle: leaves
+mode: default
+content:
+  field_employee:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_leaves:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

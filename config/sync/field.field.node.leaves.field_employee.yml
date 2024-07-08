@@ -1,0 +1,29 @@
+uuid: 81a30feb-66bf-4ba5-930b-502fd7c80d4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee
+    - node.type.leaves
+id: node.leaves.field_employee
+field_name: field_employee
+entity_type: node
+bundle: leaves
+label: Employee
+description: 'The leaves of the particular employee.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

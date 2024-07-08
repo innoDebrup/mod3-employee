@@ -1,0 +1,38 @@
+uuid: b5357697-eb4a-4a2b-bd90-6641c8eda9c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.basic_details
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__basic_details_block_1
+theme: bootstrap5
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:basic_details-block_1'
+settings:
+  id: 'views_block:basic_details-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

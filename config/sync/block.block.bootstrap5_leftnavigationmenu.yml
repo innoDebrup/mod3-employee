@@ -1,0 +1,33 @@
+uuid: 00fae507-4835-447c-a000-7f04faf7ef56
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.left-navigation-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: bootstrap5_leftnavigationmenu
+theme: bootstrap5
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'system_menu_block:left-navigation-menu'
+settings:
+  id: 'system_menu_block:left-navigation-menu'
+  label: 'Left Navigation Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

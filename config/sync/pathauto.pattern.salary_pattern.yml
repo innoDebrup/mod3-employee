@@ -1,0 +1,22 @@
+uuid: 7b2c4082-507c-495a-96e1-078176cacc96
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: salary_pattern
+label: 'Salary Pattern'
+type: 'canonical_entities:node'
+pattern: '/salary/[node:field_user:entity:display-name]'
+selection_criteria:
+  74cb910a-f863-44e8-a72d-f3c14cfd52fa:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 74cb910a-f863-44e8-a72d-f3c14cfd52fa
+    context_mapping:
+      node: node
+    bundles:
+      employee_salary: employee_salary
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+uuid: 5d7e6aab-7895-43be-addf-ad39047cad30
+langcode: en
+status: true
+dependencies:
+  config:
+    - business_rules.action.send_email_to_hr
+id: new_user_registered
+label: 'New User Registered'
+description: 'New User is Registered.'
+reacts_on: entity_insert
+target_entity_type: user
+target_bundle: user
+items:
+  send_email_to_hr:
+    type: action
+    id: send_email_to_hr
+    weight: -9
+tags: {  }
+enabled: null

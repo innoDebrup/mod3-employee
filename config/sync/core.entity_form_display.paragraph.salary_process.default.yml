@@ -1,0 +1,41 @@
+uuid: 7725bd2c-046f-4438-8883-bbbafc29ac0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.salary_process.field_date_processed
+    - field.field.paragraph.salary_process.field_processed
+    - field.field.paragraph.salary_process.field_salary
+    - paragraphs.paragraphs_type.salary_process
+  module:
+    - conditional_fields
+    - datetime
+id: paragraph.salary_process.default
+targetEntityType: paragraph
+bundle: salary_process
+mode: default
+content:
+  field_date_processed:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields: {  }
+  field_processed:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_salary:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

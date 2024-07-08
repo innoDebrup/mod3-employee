@@ -1,0 +1,14 @@
+uuid: f84bfdc4-55b7-466b-951c-c66b8d282fda
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_pattern
+label: 'User Pattern'
+type: 'canonical_entities:user'
+pattern: '/[user:account-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

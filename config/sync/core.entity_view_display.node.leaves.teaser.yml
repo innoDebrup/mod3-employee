@@ -1,0 +1,24 @@
+uuid: b274f83b-dc68-46a8-8426-9bfabd0867ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.leaves.field_employee
+    - field.field.node.leaves.field_leaves
+    - node.type.leaves
+  module:
+    - user
+id: node.leaves.teaser
+targetEntityType: node
+bundle: leaves
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_employee: true
+  field_leaves: true

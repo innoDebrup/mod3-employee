@@ -1,0 +1,24 @@
+uuid: 21074b3b-d001-474a-89d9-fc4bcd282d62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_hra
+  module:
+    - user
+id: user.user.field_hra
+field_name: field_hra
+entity_type: user
+bundle: user
+label: HRA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ₹
+  suffix: ''
+field_type: integer
